@@ -11,7 +11,7 @@ const Card = () => {
     try{
 
       setIsLoading(true)
-      const res = await fetch(`https:api.qrserver.com/v1/create-qr-code/?size=200x200&data=${input}`)
+      const res = await fetch(`https:api.qrserver.com/v1/create-qr-code/?size=150x150&data=${input}`)
       console.log(res)
       setQr(res.url)
     } catch (error){
