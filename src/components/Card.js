@@ -30,7 +30,7 @@ const Card = () => {
       value={input} 
       onChange={(e) => setInput(e.target.value)}
       required
-      placeholder='Enter URL or Text.'
+      placeholder='Enter URL or Text....'
       />
       {isloading && <div className='loading'><span>Loading...</span></div>}
       {!isloading && (qr ? <img className='qr_code' src={qr} alt='qr_code'/>: 
